@@ -4,6 +4,7 @@ This is an app to show the capabilities of [Glob3 Mobile](https://github.com/glo
 The app connects with Komoot API (Get the auth, etc...), get the list of activities from the user and show it on a 3D native map.
 
 **If you want to try the app simply install this apk**
+
 [APK](https://github.com/mdelacalle/KomootSandbox/blob/master/deploy/release/app-release.apk)
 
 **Some videos of the app working are here:**
