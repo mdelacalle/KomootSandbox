@@ -1,4 +1,5 @@
 **Komoot Sandbox**
+
 This is an app to show the capabilities of [Glob3 Mobile](https://github.com/glob3mobile/g3m) acting together with the API of Komoot.
 
 The app connects with Komoot API (Get the auth, etc...), get the list of activities from the user and show it on a 3D native map.
