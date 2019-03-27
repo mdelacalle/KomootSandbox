@@ -25,9 +25,6 @@ public class RequestTokenAsyncTask extends AsyncTask<String, Void, Boolean> {
     public static final String REFRESH_TOKEN = "refresh_token";
 
     /*CONSTANT FOR THE AUTHORIZATION PROCESS*/
-    // client_id:     g3m-j2mhh4
-    // client_secret: aezoh3ahdeiquaephahgaathe
-    //https://auth.komoot.de/oauth/authorize
     /****FILL THIS WITH YOUR INFORMATION*********/
     //This is the public api key of our application
     private static final String API_KEY = "g3m-j2mhh4";
