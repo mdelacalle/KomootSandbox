@@ -34,4 +34,6 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
     implementation 'com.android.support:recyclerview-v7:28.0.0'
     implementation 'io.realm:android-adapters:3.0.0'
+    implementation project(':G3MSharedSDK')
+    implementation project(':G3MAndroidSDK')
 }

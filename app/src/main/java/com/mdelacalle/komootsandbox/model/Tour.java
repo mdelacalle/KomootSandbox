@@ -1,6 +1,8 @@
 package com.mdelacalle.komootsandbox.model;
 
+import io.realm.RealmList;
 import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
 
 public class Tour extends RealmObject {
     String status;
@@ -11,9 +13,12 @@ public class Tour extends RealmObject {
     String distance;
     String duration;
     String sport;
-    String map_image;
-    String map_image_preview;
+    User user;
+    Image map_image;
+    Image map_image_preview;
+    @PrimaryKey
     String id;
+    RealmList<Coordinate> coordinates;
 
     public String getStatus() {
         return status;
@@ -79,28 +84,36 @@ public class Tour extends RealmObject {
         this.sport = sport;
     }
 
-    public String getMap_image() {
-        return map_image;
-    }
-
-    public void setMap_image(String map_image) {
-        this.map_image = map_image;
-    }
-
-    public String getMap_image_preview() {
-        return map_image_preview;
-    }
-
-    public void setMap_image_preview(String map_image_preview) {
-        this.map_image_preview = map_image_preview;
-    }
-
     public String getId() {
         return id;
     }
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public Image getMap_image() {
+        return map_image;
+    }
+
+    public void setMap_image(Image map_image) {
+        this.map_image = map_image;
+    }
+
+    public Image getMap_image_preview() {
+        return map_image_preview;
+    }
+
+    public void setMap_image_preview(Image map_image_preview) {
+        this.map_image_preview = map_image_preview;
+    }
+
+    public RealmList<Coordinate> getCoordinates() {
+        return coordinates;
+    }
+
+    public void setCoordinates(RealmList<Coordinate> coordinates) {
+        this.coordinates = coordinates;
     }
 
     @Override
@@ -114,9 +127,18 @@ public class Tour extends RealmObject {
                 ", distance='" + distance + '\'' +
                 ", duration='" + duration + '\'' +
                 ", sport='" + sport + '\'' +
-                ", map_image='" + map_image + '\'' +
-                ", map_image_preview='" + map_image_preview + '\'' +
+                ", map_image=" + map_image +
+                ", map_image_preview=" + map_image_preview +
                 ", id='" + id + '\'' +
+                ", coordinates=" + coordinates +
                 '}';
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }

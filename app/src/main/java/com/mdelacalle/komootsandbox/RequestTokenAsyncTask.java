@@ -36,16 +36,13 @@ public class RequestTokenAsyncTask extends AsyncTask<String, Void, Boolean> {
     private static final String REDIRECT_URI = "https://komoot.redirecturl";
     /*********************************************/
     //These are constants used for build the urls
-    private static final String AUTHORIZATION_URL = "https://auth.komoot.de/oauth/authorize";
     private static final String ACCESS_TOKEN_URL = "https://auth.komoot.de/oauth/token";
     private static final String REFRESH_TOKEN_URL = "https://auth.komoot.de/oauth/token?refresh_token";
-    private static final String SECRET_KEY_PARAM = "client_secret";
-    private static final String RESPONSE_TYPE_PARAM = "response_type";
+
     private static final String GRANT_TYPE_PARAM = "grant_type";
     private static final String GRANT_TYPE = "authorization_code";
     private static final String RESPONSE_TYPE_VALUE ="code";
-    private static final String CLIENT_ID_PARAM = "client_id";
-    private static final String STATE_PARAM = "state";
+
     private static final String REDIRECT_URI_PARAM = "redirect_uri";
     /*---------------------------------------*/
     private static final String QUESTION_MARK = "?";
@@ -115,9 +112,6 @@ public class RequestTokenAsyncTask extends AsyncTask<String, Void, Boolean> {
                             editor.putString(ACCESS_TOKEN, accessToken);
                             editor.putString(REFRESH_TOKEN, refreshToken);
                             editor.commit();
-
-
-                            //process the response
 
                             return true;
                         }

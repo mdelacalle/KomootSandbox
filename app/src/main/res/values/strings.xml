@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">KomootSandbox</string>
+    <string name="app_name">Sandbox</string>
+    <string name="my_tours">My tours</string>
+    <string name="aheas">ahead</string>
+    <string name="back">back</string>
+    <string name="switch_imagery">Switch layer</string>
 </resources>

@@ -12,9 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".ListToursActivity"></activity>
-        <activity android:name=".ErrorActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.Map3DActivity"></activity>
+        <activity android:name=".activities.ListToursActivity" />
+        <activity android:name=".activities.ErrorActivity" />
+        <activity android:screenOrientation="portrait" android:name=".activities.MainActivity"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
