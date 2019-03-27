@@ -6,7 +6,7 @@ The app connects with Komoot API (Get the auth, etc...), get the list of activit
 
 **If you want to try the app simply install this apk**
 
-[APK](https://github.com/mdelacalle/KomootSandbox/blob/master/deploy/release/app-release.apk)
+ - [APK](https://github.com/mdelacalle/KomootSandbox/blob/master/deploy/release/app-release.apk)
 
 **Some videos of the app working are here:**
  - https://www.youtube.com/watch?v=Yo-en4NjyV8&t=4s
